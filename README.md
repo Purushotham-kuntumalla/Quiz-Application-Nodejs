@@ -11,6 +11,7 @@ To run this application locally, follow these steps:
 git clone <repository_url> 2. **Navigate to the project directory:**
 
 cd nodejs-quiz-application 3. **Install dependencies:**
+npm install express        4. **Install express from the npm**
 npm install
 
 4. **Start the server:**
