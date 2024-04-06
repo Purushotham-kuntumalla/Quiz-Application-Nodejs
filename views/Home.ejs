@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Quiz</title>
+    <link rel="stylesheet" href="/public/index.css"> <!-- Linking external stylesheet -->
+    <style>
+        /* Internal CSS styles */
+        body{
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            background: #222831;
+        }
+        .question{
+            font-size: 1.6rem;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #EEEEEE;
+            font-size: 2rem;
+        }
+        #questionNum{
+            text-align: center;
+            color: #EEEEEE;
+            font-size: 1.5rem;
+        }
+        #quiz{
+            margin: 1rem;
+        }
+        #result{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .quizSection{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem;
+        }
+        li{
+            list-style: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: .6rem;
+            background-color: #76ABAE;
+            margin-bottom: 1rem;
+            color: #FFF455;
+            border-left: 3px solid #EEEEEE;
+            text-transform: capitalize;
+            border-radius: 7px;
+        }
+        li:hover{
+            cursor: pointer;
+            background: #00224D;
+            color: #000;
+            border-left: 3px solid #000;
+            transition: all 0.3s linear;
+            scale: .98;
+            box-shadow: 4px 2px 1px 1px #fff;
+        }
+        button{
+            margin-bottom: 2rem;
+            padding: 1rem;
+            width: 200px;
+            background: #00224D;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .score{
+            color: #fff;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section >
+        <h1>Node.js Quiz</h1>
+        <p id="questionNum"></p>
+        <div id="quiz">
+            <!-- Quiz questions will be dynamically inserted here -->
+        </div>
+        <div class="btn">
+            <!-- Button to submit answers -->
+            <button onclick="submitAnswers()">Submit Answers</button>
+        </div>
+        
+        <div id="result"></div> <!-- Result will be displayed here -->
+    </section>
+    
+    <!-- Linking JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
